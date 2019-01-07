@@ -1,0 +1,8 @@
+FROM seabaylea/kitura-template
+  
+WORKDIR /swift-project
+
+COPY . /swift-project
+RUN swift build
+
+CMD .build/debug/kitura-template
